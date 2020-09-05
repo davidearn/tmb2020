@@ -12,3 +12,6 @@ Math 747 Topics in Mathematical Biology at [McMaster University](http://www.mcma
 
 [DE's COVID links page](https://github.com/mac-theobio/Lab_meeting/blob/master/covid-19/README.md)
 
+[COVID-19 cases in Hamilton](https://www.hamilton.ca/coronavirus/status-cases-in-hamilton)
+
+[MacPan Shiny](https://mcmasterpandemic.shinyapps.io/mcmasterpandemicshiny/)
