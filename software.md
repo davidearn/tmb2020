@@ -6,7 +6,7 @@ There are several software packages that you must have on your laptop for this c
 * Emacs
 * A spell-checker that understands LaTeX
 
-# Learning R
+# R
 
 [R](http://www.r-project.org) is an open-source programming language
 that you can download and install on any computer.  Installing R gives
