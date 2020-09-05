@@ -1,0 +1,485 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin = 1in]{geometry}
+%% \usepackage{graphics,graphicx}
+\usepackage[table]{xcolor}
+%% \newcommand{\fix}[1]{{\textcolor{red}{FIX: #1}}}
+%% \newcommand{\note}{\noindent{\bfseries\slshape Note:\/} }
+%% %\usepackage{amssymb,latexsym,amsmath,setspace}
+%% \usepackage{hyperref}
+%% %\usepackage{xspace}
+%% %\usepackage{subfigure}
+%% %\usepackage{lineno}
+
+\input{coursemacros}
+\renewcommand{\thiscoursecode}{747}
+
+\begin{document}
+
+\rightline{
+\scalebox{0.6}{
+\includegraphics{images/maclogo_colour.pdf}
+}
+}
+
+{\Large\parindent=0pt
+
+{\bfseries Mathematics 747 / 5GT3}
+
+{\slshape Topics in Mathematical Biology: Pandemic Modelling}
+
+Course Information Sheet, Fall 2020
+
+}
+
+\bigskip
+
+\leftline{{\bf Instructor:} David Earn}
+\leftline{{\bf Office:} Hamilton Hall 317}
+\leftline{{\bf Office Hours:} By Appointment (online only)}
+%%\leftline{{\bf Phone:} (905) 525-9140, x27245}
+\leftline{{\bf E-mail:} \texttt{\myemaillink}}
+\leftline{{\bf Home page:} \url{http://davidearn.mcmaster.ca}}
+
+%%\bigskip
+%%\leftline{{\bf TA/Marker:} Emma Holmes}
+%% 25 hours for 19+6 students in 2013
+%% 15 hours for 12+1 students in 2014
+%% 20 hours for 12+7 students in 2016
+%% 19 hours for 16+0 students in 2017
+%% 20 hours for 14+3 students in 2018
+%% 20 hours for 12 students in winter 2019
+%% 15 hours for 16 students in fall 2019
+%%\leftline{{\bf Office:} Hamilton Hall 105}
+%%\leftline{{\bf Office Hours:} Thursdays, 6:30--8:30 pm, in the Math Help Centre}
+%%\leftline{\phantom{\bf Office Hours:} \emph{but first year students have priority}.}
+%%\leftline{{\bf E-mail:} {\tt \href{mailto:holmese@mcmaster.ca}{holmese@mcmaster.ca}}}
+
+\paragraph*{Class Location:} Virtual Classroom\\
+\emph{If you are not registered in the course, but would like to
+  attend, e-mail} \texttt{\myemaillink}.
+
+\paragraph*{Class Times:}
+\begin{itemize}%%\addtolength{\itemsep}{-0.75\baselineskip}
+\item Wednesdays 9:30am -- 12:20pm
+\item {\slshape Alternative times may be considered, subject to
+    feasibility for all participants.}
+\item Classes will normally take place synchronously, possibly with
+  some asynchronous components.
+\end{itemize}
+
+\paragraph*{Prerequisites:} MATH 3F03 ``Advanced Differential
+Equations'' or an equivalent course in the qualitative theory of
+nonlinear ordinary differential equations, or permission of the
+instructor.  Familiarity with an open-source programming language (R,
+Python, or MATLAB/Octave) will be useful, since you will need to use
+R in the course.
+
+\paragraph*{Course Content:}
+
+Introduction to mathematical modelling of infectious disease (ID)
+transmission.  Application of ID models to understanding historical
+pandemics and the ongoing pandemic of SARS-CoV-2.  Critical evaluation
+of infectious disease modelling research papers, especially in
+connection with the current pandemic.
+
+\paragraph*{Course Objectives:}
+
+\begin{itemize}
+\item Learn the basics of mechanistic epidemic modelling.
+\item Become familiar with some primary research literature in
+  mathematical epidemiology. 
+\item Monitor and discuss public COVID-19 data, and modelling of the ongoing pandemic.
+\item Learn to use R packages that our group at McMaster has developed,
+  and is using for COVID-19 research and advice to policymakers.
+\item Write a paper that reviews and/or contributes to COVID-19
+  modelling research.
+\end{itemize}
+
+\paragraph*{Course web site:} \url{https://github.com/davidearn/tmb2020/}
+
+\noindent
+Course information, including announcements, handouts, lecture slides, assignments, links to downloadable course-related software, {\it etc.\/}, will be available on the course web site.  You are expected to check it regularly.
+
+%%\paragraph*{Groups:} An important aspect of the course will be to learn to work effectively in small groups (ideally 4 students per group).  Groups will be formed early in the course and you will work together on the assignments and final project.  Formation of groups will be discussed in class.  \emph{Individuals will submit a group contribution form online after each group assignment and the final project.}
+
+\paragraph*{Participation:} An important aspect of the course will be
+engaging in class discussion, presenting prepared material to the
+class, and giving feedback on the presentations of others.  Attendance
+(virtually) at all classes is mandatory.
+
+\paragraph*{Weekly update presentations:} Each week one or two
+students will be expected to present a brief summary of new
+COVID-19-related research that uses mathematical models and/or is
+important for modellers to be aware of.  Details will be discussed in
+class, but a starting point for identifying relevant research will be
+daily covid research scan summaries produced by the Public Health
+Agency of Canada (PHAC).
+
+\paragraph*{Assignments:} 
+There will be at least two assignments, which will involve using R
+packages for pandemic analysis and forecasting.  Assignments must be
+typeset in \LaTeX\ and all graphics must be prepared using {\tt R}.
+Both a final pdf and all \texttt{knitr} source code must be submitted
+to a \texttt{\href{http://github.com}{github}} repo (to be discussed
+in class).  If you do not have a
+\texttt{\href{http://github.com}{github}} account already, please
+\href{https://github.com/join}{create one}.
+
+\paragraph*{Presentations:}
+During the term, each student will present at least one journal
+article or preprint to the class.  In addition, at the end of the
+course, each student will give an oral presentation about their final
+project.  Slides for presentations must be prepared with the {\tt
+  beamer} package in \LaTeX.  Other expectations will be discussed in
+class.
+
+\paragraph*{Final Project:}
+
+The most important component of the course is the final project.  In
+addition to the project document, you will submit a ``research
+notebook'' or ``lab book'' in which you have kept track of all work
+done on the project over the course of the term.  The notebook will be
+due together with the project.  Details about the project will be
+discussed in class and a set of expectations will be posted on the
+course web site several weeks into the term.
+
+\paragraph*{Software:} In order to complete the assignments and final
+project, you will be required to develop basic competence with
+software for mathematical typesetting (\LaTeX), graphics and numerical
+analysis ({\tt R}).  These applications are all open-source free
+software projects and can be downloaded and installed on any computer.
+\begin{itemize}\addtolength{\itemsep}{-0.5\baselineskip}
+\item \LaTeX:\qquad \url{http://www.latex-project.org/}
+\item {\tt R}:\qquad \url{http://www.r-project.org}
+\end{itemize}
+\noindent You will need to install these applications on your computer.
+
+\paragraph*{Course style:}
+
+Early in the course, most of the presentations will be from the
+instructor.  There will be a mixture of lectures about epidemiological
+modelling theory and demonstrations/tutorials associated with software
+packages.  Later in the course, students will be presenting more and
+there may be some guest lectures.
+
+\paragraph*{Communicating with the instructor:}
+
+You will need to communicate with me by e-mail.  Please bear in mind
+that I am overwhelmed by e-mail (during the COVID-19 pandemic it has
+become common for me to receive 200+ e-mails in a day.).  It is easy
+for me to miss important messages.
+Please include a helpful, descriptive subject line in any e-mail that
+you send to me.  The subject line should always have the form ``{\tt
+  Math 747: \dots}''.  Examples might be:
+\begin{verbatim}
+    Math 747: confusion about assignment 1, problem 2a
+    Math 747: progress on extra challenge problem
+    Math 747: idea for final project
+    Math 747: dog ate my laptop
+\end{verbatim}
+
+\paragraph*{Communicating with you:}
+
+If you do not check your McMaster e-mail every day, then please
+provide me with an alternative method of communication (\emph{e.g.,}
+an e-mail address that you do check daily, or your cell number).  Make
+sure to check your e-mail before class in case of any changes.  If
+something goes wrong with the video link for class, check your e-mail
+for information.
+
+\paragraph*{Final Grade:}
+Your final grade will be determined as follows (tentatively; I am open
+to other possibilities if we can agree on a different marking scheme
+that is acceptable to everyone).
+%
+\begin{center}
+\rowcolors{2}{yellow}{pink}
+\begin{tabular}{l|c}
+\bf Component & \bf Weight \\\hline
+Weekly Update Presentations & 10\% \\
+Article Presentation(s) & 10\% \\
+Assignments & 20\% \\
+Final Project & 40\% \\
+Oral Presentation of Final Project & 10\% \\
+Attendance and Participation & 10\% \\
+\end{tabular}
+\end{center}
+\noindent You are expected to attend every class.  Participation
+includes completing online surveys and peer evaluations in a timely
+manner.
+
+\section*{Reference list}
+There is no course textbook.  However, the following articles should be helpful:
+
+\def\me{\bf Earn, D.J.D.\rm}
+%\font\Csc=cmcsc10
+\def\vol#1{{\bf#1}}
+\def\pp#1{{#1}}
+\begin{itemize}
+
+\item {}\me, 2004. ``Mathematical modelling of recurrent epidemics.'' 
+{\it Pi in the Sky\/}, \vol{8}, 14--17\qquad
+(Intended audience: Keen high school mathematics students)
+
+\item{}\me, 2008. ``A light introduction to modelling recurrent epidemics.'' In {\it Mathematical Epidemiology\/}, F.\ Brauer, P.\ van den Driessche, J.\ Wu (editors) {\it Lecture Notes in Mathematics\/} \vol{1945}, Springer, pp.\ 3--18\qquad
+(Intended audience: undergraduate mathematics students)
+
+\item{}\me, 2009.  ``Mathematical epidemiology of infectious diseases.'' In {\it Mathematical Biology\/}, M.A.\ Lewis, M.A.J.\ Chaplain, J.P.\ Keener, P.K.\ Maini (editors) {\it IAS/Park City Mathematics Series\/} Volume {\bf 14}, American Mathematical Society, pp.\ 151--186\qquad
+(Intended audience: senior undergraduate and beginning graduate mathematics students)
+
+\end{itemize}
+
+\noindent
+These articles and some of the other papers that will be discussed during the course are available at \url{https://davidearn.mcmaster.ca/publications}.
+
+The following books may also be useful references:
+\vspace{-0.25cm}
+\begin{itemize}\addtolength{\itemsep}{-0.5\baselineskip}
+\item ``Infectious Diseases of Humans: Dynamics and Control'' by Roy Anderson and Robert May (Oxford, 1991).
+
+\item ``Mathematical models in population biology and epidemiology'' by Fred Brauer
+and Carlos Castillo-Chavez (Springer, 2001).
+
+\item ``Modeling Infectious Diseases in Humans and Animals'' by Matt Keeling and Pej Rohani (Princeton, 2008).
+
+\item ``Nonlinear Dynamics and Chaos'' by Steven H.\ Strogatz (1994).
+
+\item ``Simulating, Analyzing, and Animating Dynamical Systems: A Guide to XPPAUT for Researchers and Students'' by Bard Ermentrout (2002).
+
+\end{itemize}
+In addition, the following e-books available through the McMaster library system might be useful:
+\begin{itemize}\addtolength{\itemsep}{-0.5\baselineskip}
+
+\item ``A Primer of Ecology with R'' by M. Henry H. Stevens (Springer, 2009)
+
+\item ``Data Manipulation with R'' by Phil Spector (Springer, 2008)
+
+\item ``Modern Infectious Disease Epidemiology Concepts, Methods, Mathematical Models, and Public Health'' edited by Alexander Kr\"amer, Mirjam Kretzschmar and Klaus Krickeberg (Springer, 2010)
+
+\end{itemize}
+
+%\newpage
+%\bigbreak \bigbreak
+\section*{Notes}
+
+\subsection*{REQUESTS FOR RELIEF FOR MISSED ACADEMIC TERM WORK}
+
+\href{https://secretariat.mcmaster.ca/university-policies-procedures-guidelines/msaf-mcmaster-student-absence-form/}{McMaster
+  Student Absence Form (MSAF)}: In the event of an absence for medical
+or other reasons, students should review and follow the Academic
+Regulation in the Undergraduate Calendar “Requests for Relief for
+Missed Academic Term Work”.
+
+%% In most cases, missed work or tests will be addressed by reweighing
+%% the remaining work or tests. If you must miss a lecture, it is your
+%% responsibility to find out what was covered. The best way to do
+%% this is to borrow a classmate’s notes, read them over, and then ask
+%% your instructor if there is something that you do not understand.
+
+\subsection*{Late Withdrawal Option}
+
+McMaster University provides a
+\href{https://academiccalendars.romcmaster.ca/content.php?catoid=38&navoid=8043#late_withdrawal}{Late
+  Withdrawal Option} for students who have become irretrievably behind
+in a course. Those who have fallen behind with assignments and/or are
+not prepared to write the final examination (or submit an equivalent
+assessment) are encouraged to make use of this Option, and must
+contact their Academic Advisor in the Faculty/Program Office. Students
+may request a Late Withdrawal, without petition, no later than the
+last day of classes in the relevant term.
+The policy also specifies certain conditions that make a student
+ineligible for this Option.
+
+\subsection*{ACADEMIC ACCOMMODATION OF STUDENTS WITH DISABILITIES}
+
+Students with disabilities who require academic accommodation must
+contact \href{https://sas.mcmaster.ca/}{Student Accessibility Services
+  (SAS)} at 905-525-9140 ext. 28652 or \myemail{sas@mcmaster.ca}{Math
+  \thiscoursecode: }{sas@mcmaster.ca} to make arrangements with a
+Program Coordinator. For further information, consult
+\href{https://secretariat.mcmaster.ca/app/uploads/Academic-Accommodations-Policy.pdf}{McMaster
+  University’s Academic Accommodation of Students with Disabilities
+  policy}.
+
+\subsection*{ACADEMIC ACCOMMODATION FOR RELIGIOUS, INDIGENOUS OR SPIRITUAL OBSERVANCES (RISO)}
+
+Students requiring academic accommodation based on religious,
+indigenous or spiritual observances should follow the procedures set
+out in the
+\href{https://secretariat.mcmaster.ca/app/uploads/2019/02/Academic-Accommodation-for-Religious-Indigenous-and-Spiritual-Observances-Policy-on.pdf}{RISO
+  policy}. Students should submit their request to their Faculty
+Office normally within 10 working days of the beginning of term in
+which they anticipate a need for accommodation or to the Registrar's
+Office prior to their examinations. Students should also contact their
+instructors as soon as possible to make alternative arrangements for
+classes, assignments, and tests.
+
+\subsection*{COURSES WITH AN ON-LINE ELEMENT}
+
+Some courses may use on-line elements (e.g. e-mail, Avenue to Learn
+(A2L), LearnLink, github, web pages, capa, Moodle, ThinkingCap,
+etc.). Students should be aware that, when they access the electronic
+components of a course using these elements, private information such
+as first and last names, user names for the McMaster e-mail accounts,
+and program affiliation may become apparent to all other students in
+the same course. The available information is dependent on the
+technology used. Continuation in a course that uses on-line elements
+will be deemed consent to this disclosure.  If you have any questions
+or concerns about such disclosure, please discuss this with the course
+instructor.
+
+\subsection*{ONLINE PROCTORING}
+
+Some courses may use online proctoring software for tests and
+exams. This software may require students to turn on their video
+camera, present identification, monitor and record their computer
+activities, and/or lock/restrict their browser or other
+applications/software during tests or exams. This software may be
+required to be installed before the test/exam begins.
+
+\subsection*{ACADEMIC INTEGRITY}
+
+You are expected to exhibit honesty and use ethical behaviour in all
+aspects of the learning process. Academic credentials you earn are
+rooted in principles of honesty and academic integrity.  \emph{It is
+  your responsibility to understand what constitutes academic
+  dishonesty.}  Academic dishonesty is to knowingly act or fail to act
+in a way that results or could result in unearned academic credit or
+advantage. This behaviour can result in serious consequences, e.g. the
+grade of zero on an assignment, loss of credit with a notation on the
+transcript (notation reads: “Grade of F assigned for academic
+dishonesty”), and/or suspension or expulsion from the university. For
+information on the various types of academic dishonesty please refer
+to the
+\href{https://secretariat.mcmaster.ca/app/uploads/Academic-Integrity-Policy-1-1.pdf}{Academic
+  Integrity Policy}, located at
+\url{https://secretariat.mcmaster.ca/university-policies-procedures-guidelines/}.
+
+The following illustrates only three forms of academic dishonesty: 
+\begin{itemize}
+\item	plagiarism, e.g. the submission of work that is not one’s own or for which other credit has been obtained.
+\item	improper collaboration in group work. 
+\item	copying or using unauthorized aids in tests and examinations. 
+\end{itemize}
+
+%%\subsection*{RESEARCH ETHICS – NA}
+
+\subsection*{AUTHENTICITY / PLAGIARISM DETECTION}
+
+Some courses may use a web-based service (Turnitin.com) to reveal
+authenticity and ownership of student submitted work. For courses
+using such software, students will be expected to submit their work
+electronically either directly to Turnitin.com or via an online
+learning platform (e.g. A2L, etc.) using plagiarism detection (a
+service supported by Turnitin.com) so it can be checked for academic
+dishonesty.
+
+Students who do not wish their work to be submitted through the
+plagiarism detection software must inform the Instructor before the
+assignment is due. No penalty will be assigned to a student who does
+not submit work to the plagiarism detection software. All submitted
+work is subject to normal verification that standards of academic
+integrity have been upheld (e.g., on-line search, other software,
+etc.). For more details about McMaster’s use of Turnitin.com please go
+to \url{www.mcmaster.ca/academicintegrity}.
+
+\subsection*{CONDUCT EXPECTATIONS}
+
+As a McMaster student, you have the right to experience, and the
+responsibility to demonstrate, respectful and dignified interactions
+within all our living, learning and working communities. These
+expectations are described in the
+\href{https://secretariat.mcmaster.ca/app/uploads/Code-of-Student-Rights-and-Responsibilities.pdf}{Code of Student Rights \& Responsibilities (the “Code”)}. All students
+share the responsibility of maintaining a positive environment for the
+academic and personal growth of all McMaster community members,
+whether in person or online.
+
+It is essential that students be mindful of their interactions online,
+as the Code remains in effect in virtual learning environments. The
+Code applies to any interactions that adversely affect, disrupt, or
+interfere with reasonable participation in University
+activities. Student disruptions or behaviours that interfere with
+university functions on online platforms (e.g. use of Avenue 2 Learn,
+WebEx or Zoom for delivery), will be taken very seriously and will be
+investigated. Outcomes may include restriction or removal of the
+involved students’ access to these platforms.
+
+\subsection*{COPYRIGHT AND RECORDING}
+
+Students are advised that lectures, demonstrations, performances, and
+any other course material provided by an instructor include copyright
+protected works. The Copyright Act and copyright law protect every
+original literary, dramatic, musical and artistic work, including
+lectures by University instructors.
+
+The recording of lectures, tutorials, or other methods of instruction
+may occur during a course. Recording may be done by either the
+instructor for the purpose of authorized distribution, or by a student
+for the purpose of personal study. Students should be aware that their
+voice and/or image may be recorded by others during the class. Please
+speak with the instructor if this is a concern for you.
+
+\subsection*{EXTREME CIRCUMSTANCES}
+
+The University reserves the right to change the dates and deadlines
+for any or all courses in extreme circumstances (e.g., severe weather,
+labour disruptions, etc.). Changes will be communicated through
+regular McMaster communication channels, such as McMaster Daily News,
+A2L and/or McMaster email.
+
+\subsection*{\slshape Disclaimer}
+The instructor and university reserve the right to modify elements of the course during the term. The university may change the dates and deadlines for any or all courses in extreme circumstances (e.g., Covid-19 lockdown, severe weather, labour disruptions, etc.). Changes will be communicated through regular McMaster communication channels, such as McMaster Daily News, A2L and/or McMaster email. It is the responsibility of the student to check their McMaster email and course websites weekly during the term and to note any changes.
+
+\bigskip \bigskip
+\noindent
+David Earn\\
+4 September 2020
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%
+%% OLD VERSION %%
+%%%%%%%%%%%%%%%%%
+
+\begin{enumerate}\addtolength{\itemsep}{-0.5\baselineskip}
+
+\item {\bf Policy on missed assignments, tests, lectures or tutorials:} 
+\begin{itemize}
+\item \url{http://www.mcmaster.ca/policy/Students-AcademicStudies/UGCourseMgmt.pdf}.
+\item When using the MSAF, the e-mail address to which you should report your absence for Math 747 is {\tt earn@math.mcmaster.ca}.  In addition, within two working days, you must also contact the instructor directly by e-mail at {\tt earn@math.mcmaster.ca}.  If you miss a test or cannot hand in an assignment on time for a valid reason that has been reported via the MSAF, the final project will then be given appropriate extra weighting.  If you must miss a class, it is your responsiblity to find out what was covered.  The best way to do this is to borrow a classmate's notes, read them over, and then ask your instructor if there is something that you do not understand.
+\end{itemize}
+
+\item The instructor reserves the right to change the weightings in the grading scheme. If changes are made, your grade will be calculated using the original weightings and the new weightings, and you will be given the higher of the two grades.  At the end of the course the grades may be adjusted but this can only increase your grade and will be done uniformly.  The McMaster grade equivalence chart will be used to convert between letter grades, grade points and percentages.  The grade equivalence chart is published in the Undergraduate Calendar at \url{https://registrar.mcmaster.ca/exams/grades/}
+
+\item No calculators or other aids will be allowed during tests or quizzes unless explicitly indicated.
+
+\item You will be required to bring your official McMaster University photo identification card to the term tests and quizzes.
+
+\item The instructor and university reserve the right to modify elements of the course during the term.  The university may change the dates and deadlines for any or all courses in extreme circumstances.  If either type of modification becomes necessary, reasonable notice and communication with the students will be given with explanation and the opportunity to comment on changes.  It is the responsibility of the student to check their McMaster email and course websites weekly during the term and to note any changes.
+
+\end{enumerate}
+
+\section*{Academic Integrity}
+
+You are expected to exhibit honesty and use ethical behaviour in all aspects of the learning process. Academic credentials you earn are rooted in priniciples of honesty and academic integrity.
+
+Academic dishonesty is to knowingly act or fail to act in a way that results or could result in unearned academic credit or advantage.  This behaviour can result in serious consequences, e.g., the grade of zero on an assignment, loss of credit with a notation on the transcript (notation reads: ``Grade of F assigned for academic dishonesty''), and/or suspension or expulsion from the university.
+
+It is your responsibility to understand what constitutes dishonesty.  For information on the various kinds of a academic dishonesty please refer to the Academic Integrity Policy located at \url{http://www.mcmaster.ca/academicintegrity}.  The following illustrates only three forms of academic dishonesty:
+\begin{enumerate}\addtolength{\itemsep}{-0.5\baselineskip}
+
+\item Plagiarism, e.g., the submission of work that is not one's own or for which other credit has been obtained.
+
+\item Improper collaboration in group work. In this course, you are encouraged to discuss the assigned problems with other students in your class. However, you must write the solutions in your own words without referring to any other students' work. The copying or even paraphrasing of other students' solutions will be considered academic dishonesty.
+
+\item Copying or using unauthorized aids during tests, quizzes and examinations.
+
+\end{enumerate}
+
+\bigskip \bigskip
+\noindent
+David Earn\\
+7 September 2019
+
+\end{document}
