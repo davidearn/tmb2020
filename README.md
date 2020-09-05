@@ -1,2 +1,6 @@
 # tmb2020
-Math 747 Topics in Mathematical Biology at McMaster University
+
+Math 747 Topics in Mathematical Biology at [McMaster University](http://www.mcmaster.ca)
+
+[Course Information](./handouts/tmbinfo_2020.pdf)
+
