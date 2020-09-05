@@ -1,12 +1,12 @@
 # SOFTWARE
 
 There are several software packages that you must have on your laptop for this course.
-* LaTeX
 * R (and the RStudio GUI for R)
+* LaTeX
 * Emacs
 * A spell-checker that understands LaTeX
 
-### Learning R
+# Learning R
 
 [R](http://www.r-project.org) is an open-source programming language
 that you can download and install on any computer.  Installing R gives
