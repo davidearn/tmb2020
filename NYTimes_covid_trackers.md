@@ -61,3 +61,8 @@
 [UK](https://www.nytimes.com/interactive/2020/world/europe/united-kingdom-coronavirus-cases.html)
 
 [US](https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html)
+
+## Cities
+
+[New York City](https://www.nytimes.com/interactive/2020/nyregion/new-york-city-coronavirus-cases.html)
+
