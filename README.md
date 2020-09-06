@@ -8,6 +8,8 @@ Math 747 Topics in Mathematical Biology at [McMaster University](http://www.mcma
 
 [PHAC COVID Scans](./PHAC_covid_scans/)
 
+## External links
+
 [COVID-19 Modelling at McMaster](https://mac-theobio.github.io/covid-19/index.html)
 
 [DE's COVID links page](https://github.com/mac-theobio/Lab_meeting/blob/master/covid-19/README.md)
