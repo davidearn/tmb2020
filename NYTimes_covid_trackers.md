@@ -43,23 +43,23 @@
 ## Countries
 
 [Brazil](https://www.nytimes.com/interactive/2020/world/americas/brazil-coronavirus-cases.html)
-
+|
 [Canada](https://www.nytimes.com/interactive/2020/world/canada/canada-coronavirus-cases.html)
-
+|
 [France](https://www.nytimes.com/interactive/2020/world/europe/france-coronavirus-cases.html)
-
+|
 [Germany](https://www.nytimes.com/interactive/2020/world/europe/germany-coronavirus-cases.html)
-
+|
 [India](https://www.nytimes.com/interactive/2020/world/asia/india-coronavirus-cases.html)
-
+|
 [Italy](https://www.nytimes.com/interactive/2020/world/europe/italy-coronavirus-cases.html)
-
+|
 [Mexico](https://www.nytimes.com/interactive/2020/world/americas/mexico-coronavirus-cases.html)
-
+|
 [Spain](https://www.nytimes.com/interactive/2020/world/europe/spain-coronavirus-cases.html)
-
+|
 [UK](https://www.nytimes.com/interactive/2020/world/europe/united-kingdom-coronavirus-cases.html)
-
+|
 [US](https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html)
 
 ## Cities
