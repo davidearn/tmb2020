@@ -6,7 +6,9 @@ Math 747 Topics in Mathematical Biology at [McMaster University](http://www.mcma
 
 [Software](./software.md)
 
-[PHAC COVID Scans](./PHAC_covid_scans/)
+[NY Times Coronavirus Trackers](./NYTimes_covid_trackers.md)
+
+[PHAC Daily COVID Scans](./PHAC_covid_scans/)
 
 ## External links
 
@@ -17,3 +19,4 @@ Math 747 Topics in Mathematical Biology at [McMaster University](http://www.mcma
 [COVID-19 cases in Hamilton](https://www.hamilton.ca/coronavirus/status-cases-in-hamilton)
 
 [MacPan Shiny](https://mcmasterpandemic.shinyapps.io/mcmasterpandemicshiny/)
+
