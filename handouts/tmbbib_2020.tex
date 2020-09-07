@@ -1,0 +1,56 @@
+%% full citations in body of text without reference section:
+%%https://tex.stackexchange.com/questions/49048/how-to-cite-one-bibentry-in-full-length-in-the-body-text
+%% print DOIs and URLs in full citations:
+%%https://tex.stackexchange.com/questions/3802/how-to-get-doi-links-in-bibliography
+
+\documentclass[12pt]{article}
+%%\usepackage{filecontents}
+\usepackage[margin=1in]{geometry}
+\usepackage[colorlinks=TRUE, urlcolor=blue]{hyperref}
+
+\usepackage{natbib}
+\usepackage{bibentry}
+\nobibliography*
+
+\parindent=0pt
+\parskip=12pt
+
+\title{Possible Papers for Presentations}
+\author{Mathematics 747, Fall 2020}
+
+\begin{document}
+
+\maketitle
+
+\emph{This is by no means an exhaustive list.  You are welcome to suggest other papers.}
+
+\section*{Classic papers}
+
+\subsubsection*{Daniel Bernoulli's analysis of smallpox mortality and variolation (1766)}
+
+\emph{Original paper:}\\
+\bibentry{Bern1766}
+
+\emph{English translation and commentary:}\\
+\bibentry{BlowBern04}
+
+\emph{Updated analysis:}\\
+\bibentry{DietHees02}
+
+\subsubsection*{The SIR model: Kermack and McKendrick (1927)}
+
+\emph{Original paper:}\\
+\bibentry{KermMcKe27}
+
+\emph{Commentary:}\\
+\bibentry{Diek+95}
+
+%%%%%%%%%%%%%%%%%%
+%% BIBLIOGRAPHY %%
+%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{plainnat}
+%%\bibliography{\jobname.bib}
+\nobibliography{\jobname.bib} % do not print a reference section
+
+\end{document}
