@@ -36,7 +36,7 @@ your assignments, final project and presentations.
 
 There are several distributions of TeX but
 [TeXLive](https://www.tug.org/texlive/) has the advantage of having
-both Windows and OS X versions and including good TeX/LaTeX editors
+both Windows and OS X versions and including reasonable TeX/LaTeX editors
 (TeX is a typesetting program and does not itself include an editor).
 
 ## Installation & Configuration Notes for LaTeX
@@ -46,7 +46,7 @@ both Windows and OS X versions and including good TeX/LaTeX editors
 * just download and run the '''install-tl.exe''' file
 
 ### OS X
-* [https://www.tug.org/mactex/ MacTeX] is a bundle of TeXLive plus
+* [MacTeX](https://www.tug.org/mactex/) is a bundle of TeXLive plus
   TeXShop (a TeX editor that many people like) and a number of tools.
 
 # Emacs
