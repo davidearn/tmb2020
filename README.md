@@ -4,6 +4,8 @@ Math 747 Topics in Mathematical Biology at [McMaster University](http://www.mcma
 
 [Course Information](./handouts/tmbinfo_2020.pdf)
 
+[Sources for Presentations](./handouts/tmbbib_2020.pdf)
+
 [Software](./software.md)
 
 [NY Times Coronavirus Trackers](./NYTimes_covid_trackers.md)
