@@ -7,7 +7,13 @@
 %%\usepackage{filecontents}
 \usepackage[margin=1in]{geometry}
 \usepackage[colorlinks=TRUE, urlcolor=blue]{hyperref}
+\usepackage{xspace}
 
+%% macros
+\newcommand{\R}{{\mathcal R}}
+\newcommand{\etal}{\emph{et al.}\/\xspace}
+
+%% bibliography
 \usepackage{natbib}
 \usepackage{bibentry}
 \nobibliography*
@@ -15,14 +21,15 @@
 \parindent=0pt
 \parskip=12pt
 
-\title{Possible Papers for Presentations}
+\title{Possible Sources for Presentations}
 \author{Mathematics 747, Fall 2020}
 
 \begin{document}
 
 \maketitle
 
-\emph{This is by no means an exhaustive list.  You are welcome to suggest other papers.}
+\emph{This is by no means an exhaustive list.  You are welcome to
+  suggest other papers etc.}
 
 \section*{Classic papers}
 
@@ -47,7 +54,89 @@
 
 \subsubsection*{Nonlinear incidence}
 
+\emph{Original proposal of $\beta S^hI$ models:}\\
 \bibentry{WilsWorc45}
+
+\emph{Analysis via bifurcation theory:}\\
+\bibentry{Liu+87}
+
+\section*{Reviews}
+
+\subsubsection*{Vaccines}
+
+\href{https://www.historyofvaccines.org/timeline/all}{``History of
+  Vaccines'' web site} by the College of Physicians of Philadelphia.
+
+\subsubsection*{Infectious disease dynamics}
+
+\emph{Major review:}\\
+\bibentry{Hees+15}
+
+\emph{Commentary during COVID-19 pandemic:}\\
+\bibentry{Metc+20}
+
+\section*{Online lectures}
+
+\subsubsection*{Science communication in relation to epidemics}
+
+\href{https://www.youtube.com/watch?v=ZSp-k6C9qBw}{``Misinfodemic
+  2020''}: \href{http://ctbergstrom.com/}{Carl Bergstrom}'s plenary
+talk at the Society for Mathematical Biology (SMB) 2020 annual
+meeting.
+
+\section*{Estimating the initial epidemic growth rate $r$}
+
+\bibentry{Ma+14}
+
+\bibentry{Earn+20}
+
+\section*{Estimating the basic reproduction number $\R_0$}
+
+\emph{Finding formulae for $\R_0$ from ODE models:}\\
+\bibentry{vandWatm02}
+
+\emph{From $r$ to $\R_0$:}\\
+\bibentry{WallLips07}
+
+\emph{Understanding generation intervals, which are needed to go from
+  $r$ to $\R_0$:}\\
+\bibentry{ChamDush15}
+
+\emph{On COVID-19 $\R_0$ estimation:}\\
+\bibentry{Park+20}
+
+\section*{Estimating the effective reproduction number $\R_t$}
+
+\bibentry{WallTeun04}
+
+\bibentry{Gold+09}
+
+\bibentry{Cori+13}
+
+\subsubsection*{COVID-19 $\R_t$ estimations}
+
+\bibentry{Pan+20}
+
+\href{https://github.com/keyajoshi/Pan_response}{Lipsitch \etal
+  comment on Pan \etal JAMA paper}
+{\footnotesize\parskip=0pt
+\begin{itemize}\itemsep0pt
+\item notes that Pan \etal would not share their data, so they digitized the graph
+\item Cori \etal (\texttt{EpiEstim}) does not use WT method
+\end{itemize}
+}
+
+\href{https://www.datacamp.com/community/tutorials/replicating-in-r-covid19}{Data camp on estimating $\R_t$ for COVID-19}.
+
+\href{https://staff.math.su.se/hoehle/blog/2020/04/15/effectiveR0.html}{Michael Höhle.  Effective reproduction number estimation}.
+
+\section*{COVID-19 papers and resources}
+
+\bibentry{Li+20}
+
+\bibentry{Fauc+20}
+
+\href{https://github.com/mac-theobio/Lab_meeting/blob/master/covid-19/README.md}{DE's COVID links page}
 
 %%%%%%%%%%%%%%%%%%
 %% BIBLIOGRAPHY %%
