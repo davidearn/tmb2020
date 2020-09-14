@@ -1,6 +1,8 @@
 
 [Evidence Synthesis Network](https://esnetwork.ca/)
 
+----
+
 ## Research, Analysis and Evaluation Branch (RAEB) Evidence Updates
 
 ### September 2020
