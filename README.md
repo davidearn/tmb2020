@@ -10,6 +10,8 @@ Math 747 Topics in Mathematical Biology at [McMaster University](http://www.mcma
 
 [NY Times Coronavirus Trackers](./NYTimes_covid_trackers.md)
 
+[RAEB Evidence Updates](./RAEB_evidence_updates/)
+
 [PHAC Daily COVID Scans](./PHAC_covid_scans/)
 
 ## External links
