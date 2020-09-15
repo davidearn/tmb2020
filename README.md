@@ -22,5 +22,9 @@ Math 747 Topics in Mathematical Biology at [McMaster University](http://www.mcma
 
 [COVID-19 cases in Hamilton](https://www.hamilton.ca/coronavirus/status-cases-in-hamilton)
 
+[Public Health Ontario (PHO) COVID-19 resources](https://www.publichealthontario.ca/en/diseases-and-conditions/infectious-diseases/respiratory-diseases/novel-coronavirus)
+([PHO main page](https://www.publichealthontario.ca/))
+([PHO pdf with link to daily scans](https://www.publichealthontario.ca/-/media/documents/ncov/ncov-daily-lit.pdf?la=en))
+
 [MacPan Shiny](https://mcmasterpandemic.shinyapps.io/mcmasterpandemicshiny/)
 
