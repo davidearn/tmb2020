@@ -1,5 +1,5 @@
 
-# Daily Scan of COVID-19 Scientific Publications (by PHAC)
+# Daily Scans of COVID-19 Scientific Publications (by PHAC)
 
 ## August 2020
 
@@ -19,9 +19,14 @@
 
 ----
 
-[All references in the online RefWorks database](https://refworks.com/refworks2/?site=031021128139200000%2f71471580905923745%2fAll_References) (alternative [Google sheets version](https://drive.google.com/drive/folders/1dk9gOzOl1UvbwAwK7vANk6XiOF8CrD2M))
+All references from the daily scans (going back to the very beginning)
+are in the
+[online RefWorks database](https://refworks.com/refworks2/?site=031021128139200000%2f71471580905923745%2fAll_References)
+(and the alternative
+[Google sheets version](https://drive.google.com/drive/folders/1dk9gOzOl1UvbwAwK7vANk6XiOF8CrD2M))
 
-[Modelling references in the online RefWorks database](https://refworks.com/refworks2/?site=031021128139200000%2f71471580905923745%2fPredictiveModel)
+The RefWorks databased filtered for the "Modelling/prediction"
+category is [here](https://refworks.com/refworks2/?site=031021128139200000%2f71471580905923745%2fPredictiveModel)
 - This category is defined as "Modelling/prediction: Predictive modeling is a process that uses data mining and probability to forecast outcomes. Each model is made up of a number of predictors, which are variables that are likely to influence future results."
 
 Links to different filters of the full database are available at the bottom of the daily scans above.
