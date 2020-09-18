@@ -18,6 +18,8 @@ Math 747 Topics in Mathematical Biology at [McMaster University](http://www.mcma
 
 ## External links
 
+[COVID-19 Modelling seminar at the Fields Institute](http://www.fields.utoronto.ca/activities/20-21/covid-19-math-modelling-seminar)
+
 [COVID-19 Modelling at McMaster](https://mac-theobio.github.io/covid-19/index.html)
 
 [DE's COVID links page](https://github.com/mac-theobio/Lab_meeting/blob/master/covid-19/README.md)
