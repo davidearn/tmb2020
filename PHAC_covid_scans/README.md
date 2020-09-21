@@ -1,6 +1,8 @@
 
 # Daily Scans of COVID-19 Scientific Publications (by PHAC)
 
+[Explanation of methodology](./LisaWaddell_explanation.md)
+
 ## August 2020
 
 - [31](./2020-08-31.html)
