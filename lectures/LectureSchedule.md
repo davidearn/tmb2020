@@ -7,6 +7,6 @@
 
 | W | L | Date | Topic | Links/Comments |
 |---|---|------|-------|----------------|
-| 1 | [01](4mbl01_2020.pdf) | Thu 17 Sep 2020 | Epidemic Modelling Intro | [Course information](../handouts/tmbinfo_2020.pdf) |
+| 1 | [01](tmbl01_2020.pdf) | Thu 17 Sep 2020 | Epidemic Modelling Intro | [Course information](../handouts/tmbinfo_2020.pdf) |
 
-[Main page for this course](https://davidearn.github.io/tmb2020/)
+[Main page for this course](https://davidearn.github.io/mathtmb/)
