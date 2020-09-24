@@ -18,6 +18,8 @@ Math 747 Topics in Mathematical Biology at [McMaster University](http://www.mcma
 
 [PHAC Daily COVID Scans](./PHAC_covid_scans/)
 
+[R examples](./Rexamples/Rexamples.R)
+
 ## External links
 
 [Canada COVID-19 Situational Awareness Dashboard](https://health-infobase.canada.ca/covid-19/dashboard/)
