@@ -11,6 +11,9 @@ Math 747 Topics in Mathematical Biology at [McMaster University](http://www.mcma
 [Sources for Presentations](./handouts/tmbbib_2020.pdf)
 
 [Software](./software.md)
+- [R examples](./Rexamples/Rexamples.R)
+
+## Covid
 
 [NY Times Coronavirus Trackers](./NYTimes_covid_trackers.md)
 
@@ -18,9 +21,7 @@ Math 747 Topics in Mathematical Biology at [McMaster University](http://www.mcma
 
 [PHAC Daily COVID Scans](./PHAC_covid_scans/)
 
-[R examples](./Rexamples/Rexamples.R)
-
-## Covid in Canada
+### Covid in Canada
 
 [Canada COVID-19 Situational Awareness Dashboard](https://health-infobase.canada.ca/covid-19/dashboard/)
 - [Canada's Epidemic curve (daily update from Federal Government)](https://health-infobase.canada.ca/covid-19/epidemiological-summary-covid-19-cases.html#a4)
@@ -43,4 +44,3 @@ Math 747 Topics in Mathematical Biology at [McMaster University](http://www.mcma
 [COVID-END evidence synthesis project](https://www.mcmasterforum.org/networks/covid-end)
 
 [MacPan Shiny](https://mcmasterpandemic.shinyapps.io/mcmasterpandemicshiny/)
-
