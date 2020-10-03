@@ -26,10 +26,7 @@ Math 747 Topics in Mathematical Biology at [McMaster University](http://www.mcma
 - [Canada's Epidemic curve (daily update from Federal Government)](https://health-infobase.canada.ca/covid-19/epidemiological-summary-covid-19-cases.html#a4)
 
 [Public Health Ontario (PHO) Weekly epidemiologic summaries](https://covid-19.ontario.ca/covid-19-epidemiologic-summaries-public-health-ontario#weekly)
--
-[Public Health Ontario (PHO) COVID-19 resources](https://www.publichealthontario.ca/en/diseases-and-conditions/infectious-diseases/respiratory-diseases/novel-coronavirus)
-([PHO main page](https://www.publichealthontario.ca/))
-([PHO pdf with link to daily scans](https://www.publichealthontario.ca/-/media/documents/ncov/ncov-daily-lit.pdf?la=en))
+- [Public Health Ontario (PHO) COVID-19 resources](https://www.publichealthontario.ca/en/diseases-and-conditions/infectious-diseases/respiratory-diseases/novel-coronavirus) ([PHO main page](https://www.publichealthontario.ca/)) ([PHO pdf with link to daily scans](https://www.publichealthontario.ca/-/media/documents/ncov/ncov-daily-lit.pdf?la=en))
 
 [CTV News Ontario Covid status](https://www.ctvnews.ca/health/coronavirus/tracking-every-case-of-covid-19-in-canada-1.4852102#ontario)
 
