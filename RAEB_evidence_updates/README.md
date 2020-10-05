@@ -5,6 +5,17 @@
 
 ## Research, Analysis and Evaluation Branch (RAEB) Evidence Updates
 
+The COVID-19 Evidence Update is produced weekly by the Research,
+Analysis and Evaluation Branch (RAEB) in the Ministry of Health. The
+aim of the Evidence Update is to present up-to-date, curated evidence
+about COVID-19 and the response to the pandemic.
+
+The Evidence Update contains summaries of evidence products developed
+by [RAEB's] research partners and/or by the Evidence Synthesis Unit,
+curated research and jurisdictional information that may be of
+interest to staff, and links to trusted sources of information about
+COVID-19.
+
 ### August 2020
 
 - [Update #19 (04 Aug 2020)](./RAEB_19_2020-08-04.pdf)
