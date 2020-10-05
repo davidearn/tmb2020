@@ -16,7 +16,8 @@
 
 - [Update #24 (8 Sep 2020)](./RAEB_24_2020-09-08.pdf)
 - [Update #25 (14 Sep 2020)](./RAEB_25_2020-09-14.pdf)
-- [Update #28 (28 Sep 2020)](./RAEB_28_2020-09-28.pdf)
+- [Update #27 (28 Sep 2020)](./RAEB_27_2020-09-28.pdf)
+- [Update #28 (5 Oct 2020)](./RAEB_28_2020-10-05.pdf)
 
 ## RAEB Modelling Evidence Updates
 
