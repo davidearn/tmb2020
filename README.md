@@ -29,6 +29,8 @@ Math 747 Topics in Mathematical Biology at [McMaster University](http://www.mcma
 [Public Health Ontario (PHO) Weekly epidemiologic summaries](https://covid-19.ontario.ca/covid-19-epidemiologic-summaries-public-health-ontario#weekly)
 - [Public Health Ontario (PHO) COVID-19 resources](https://www.publichealthontario.ca/en/diseases-and-conditions/infectious-diseases/respiratory-diseases/novel-coronavirus) ([PHO main page](https://www.publichealthontario.ca/)) ([PHO pdf with link to daily scans](https://www.publichealthontario.ca/-/media/documents/ncov/ncov-daily-lit.pdf?la=en))
 
+[HowsMyFlattenning Ontario Dashboard](https://howsmyflattening.ca/#/dashboard/ontario)
+
 [CTV News Ontario Covid status](https://www.ctvnews.ca/health/coronavirus/tracking-every-case-of-covid-19-in-canada-1.4852102#ontario)
 
 [COVID-19 cases in Hamilton](https://www.hamilton.ca/coronavirus/status-cases-in-hamilton)
