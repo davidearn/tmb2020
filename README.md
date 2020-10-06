@@ -45,4 +45,6 @@ Math 747 Topics in Mathematical Biology at [McMaster University](http://www.mcma
 
 [COVID-END evidence synthesis project](https://www.mcmasterforum.org/networks/covid-end)
 
+[NY State COVID map](https://storage.googleapis.com/www.datareports1.health.ny.gov/index.html#map)
+
 [MacPan Shiny](https://mcmasterpandemic.shinyapps.io/mcmasterpandemicshiny/)
