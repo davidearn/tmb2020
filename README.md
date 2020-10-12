@@ -12,7 +12,7 @@ Math 747 Topics in Mathematical Biology at [McMaster University](http://www.mcma
 
 [Software](./software.md)
 - [R examples](./Rexamples/Rexamples.R)
-- [R lists tutorial](./Rexamples/Rlists.R)
+- [R lists tutorial](./Rexamples/Rlists.Rmd)
 
 ## Covid
 
