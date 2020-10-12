@@ -1,0 +1,509 @@
+---
+title: "Modes, classes, lists, data frames, and dates"
+author: "Mikael Jagan"
+date: "9 Oct 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(error = TRUE, collapse = TRUE)
+```
+
+
+## Modes and classes (optional)
+
+Objects in R are associated with a **mode**. The mode 
+of an object determines how it is stored in the computer's
+memory. The "atomic" modes are the most familiar ones. 
+They include the numeric, character, and logical modes.
+
+```{r mode1}
+mode(1)
+mode("abc")
+mode(TRUE)
+```
+
+Atomic vectors join atomic elements *of the same mode*.
+
+```{r mode2}
+c(0, 1, 1, 2, 3, 5, 8, 13)
+c("a", "famous", "sequence")
+c(TRUE, FALSE)
+```
+
+When you try to mix modes, elements are coerced to a 
+common mode.
+
+```{r mode3}
+c(FALSE, 1) # logical FALSE coerced to numeric 0
+c(1, "a") # numeric 1 coerced to character "1"
+c(FALSE, 1, "a") # character usually wins
+```
+
+Objects in R are also associated with a **class**. 
+Whereas the mode of an object determines how it is 
+stored in memory, its class determines how it is 
+handled by functions (and whether it can be handled 
+at all).
+
+The class of an atomic object (scalar or vector) 
+is usually named after the mode.
+
+```{r class1}
+class(1)
+class("abc")
+class(TRUE)
+
+x <- c(0, 1, 1, 2, 3, 5, 8, 13)
+class(x)
+```
+
+Below is a simple example of how class affects
+how an object is handled in R. It shows that you 
+can do arithmetic on numeric and logical objects, 
+but not character objects.
+
+```{r, class2}
+1 + 1 # fingers crossed...
+1 + TRUE # allowed because TRUE,FALSE map to 1,0
+1 + "a" # doesn't work
+```
+
+The distinction between class and mode in R becomes 
+more apparent when we deal with things like dates and 
+arrays.
+
+```{r class3}
+d <- as.Date("2020-10-09")
+d
+
+class(d)
+mode(d)
+
+A <- matrix(x, ncol = 2)
+A
+
+class(A)
+mode(A)
+```
+
+These are examples of *abstraction*. Conceptually, we
+think of dates differently from numbers. Likewise, R
+must handle dates differently from numbers, so it assigns 
+dates their own Date class. But in memory, a date is 
+nothing more than a number of days since a fixed reference 
+date, so dates in fact have a numeric mode. (In R, the
+reference date is January 1, 1970.)
+
+Similarly, R handles arrays, which can have more than one 
+dimension, differently from vectors, so R assigns arrays 
+their own array class. But in memory, an array is nothing 
+more than a vector, because there is a fixed rule for how 
+elements are arranged in multiple dimensions. Thus, an 
+array has the same mode as its elements (in this case,
+numeric).
+
+The second example above shows that an object can have 
+multiple classes, but only ever one mode. This means 
+that an object can be handled in different ways by 
+different functions, but how it is stored in memory is 
+unique.
+
+## Lists
+
+In our discussion of object modes, we observed
+that atomic vectors join atomic elements *of 
+the same mode*, and that attempts to join elements 
+of different modes with function `c()` cause
+coersion to a common mode (and in fact a common 
+class).
+
+R uses *lists* to join objects in a way that
+preserves both their mode and their class.
+Lists are essential to modelers who use and
+generate different kinds of data. We must be 
+able to join objects of different modes and 
+classes in a convenient way, without losing 
+information.
+
+Strictly speaking, in R, lists are vectors, 
+but they are non-atomic. *Non-atomic* vectors 
+(lists) preserve mode and class, *atomic* 
+vectors do not.
+
+You can create a list using function `list()`.
+
+```{r list1}
+num <- 1:10
+num
+
+let <- letters[1:5]
+let
+
+mat <- matrix(0, nrow = 2, ncol = 2)
+mat
+
+l <- list(num, let, mat)
+l
+
+mode(l)
+class(l)
+```
+
+Like atomic vectors, we can name elements of a list,
+making it clear what they are. When creating a list,
+we assign names by passing `name = value` to `list()`.
+We modify the names of an existing list with `names() <-`.
+
+```{r list2}
+l <- list(let = num, mat = let, num = mat) # oops
+l
+
+names(l) <- c("num", "let", "mat") # fixing our mistake
+l
+```
+
+You can verify that the mode and class of `num`, `let`, 
+and `mat` are preserved in list `l` by applying `mode()` 
+and `class()` to each element of `l` with `sapply()`.
+(You are welcome to treat the code below as magic. 
+You can also investigate with `?sapply`.)
+
+```{r list3}
+sapply(l, mode)
+sapply(l, class)
+```
+
+The output of `sapply()` shows that the elements of `l`
+have not been coerced to a common mode and class.
+
+You can subset (retrieve elements from) lists much 
+like you subset atomic vectors: using single square 
+brackets `[]` and integer indices. Subsetting 
+produces another list containing only the specified 
+elements.
+
+```{r list4}
+## Retrieve the first element
+l[1]
+
+## Retrieve the first and second elements
+l[c(1, 2)]
+```
+
+When elements of a list have names, they can be used 
+in place of indices. This is convenient because we 
+don't typically memorize the order of list elements.
+
+```{r list5}
+## Retrieve the element named "num"
+l["num"]
+
+## Retrieve the elements named "num" and "let"
+l[c("num", "let")]
+```
+
+Typically, when you retrieve just one element, you don't
+want a list containing that element; you want the element
+itself. To extract the actual element, you can use double
+square brackets `[[]]`.
+
+```{r list6}
+## Extract the third element
+l[[3]]
+
+## Extract the element named "mat"
+l[["mat"]]
+```
+
+Double square brackets have their purpose, but can be ugly. 
+An alternative for lists with named elements is the dollar
+operator `$`.
+
+```{r list7}
+## Extract the element named "mat"
+l$mat
+```
+
+If, for some reason, the name of an element starts
+with a number or contains symbols other than `.` and
+`_`, like a space, then you must quote the name like
+so: `l$"bad name!"`.
+
+You can modify elements of a list (or append elements to
+a list) using the assignment operator `<-`. If you are 
+modifying just one element, then R isn't too picky about 
+how you do it. For example, the following are equivalent.
+
+```{r list8}
+## Append an element named "e" containing Euler's number
+l$e <- exp(1)
+l[["e"]] <- exp(1)
+l["e"] <- exp(1)
+```
+
+However, if you are modifying multiple elements at once, 
+then you must use single square brackets to subset the
+list, and the value must be a vector (possibly a list) 
+whose length evenly divides the number of elements being 
+modified.
+
+```{r list9}
+## Append two elements named "x" and "y"
+l[c("x", "y")] <- list(11:20, letters[11:15]) # length 2 to length 2
+l[c("x", "y")]
+
+l[c("x", "y")] <- c(pi / 2, pi / 2) # length 2 to length 2
+l[c("x", "y")]
+
+l[c("x", "y")] <- pi # length 1 to length 2
+l[c("x", "y")]
+```
+
+To retrieve the number of elements in a list, use `length()`. 
+(Recall that `length()` gives the length of a vector, and that 
+lists are non-atomic vectors.)
+
+```{r list10}
+length(l)
+```
+
+To remove elements of a list, assign `NULL`.
+
+```{r list11}
+l[c("x", "y")] <- NULL
+length(l)
+```
+
+
+
+## Data frames
+
+Data frames are lists of atomic vectors with the same length.
+As a list, the elements (the atomic vectors) can have 
+different modes and classes. Data frames share many properties 
+with matrices: the number of rows is the common length of the 
+vectors, and the number of columns is the number of vectors. 
+Lists like this are very common in practice: for example, a 
+time series can be represented as a list containing a vector of 
+times and a vector of observations of the same length.
+
+We construct data frames out of atomic vectors using 
+function `data.frame()`. (Conveniently, and unlike 
+`list()`, this function uses variable names as column 
+names.)
+
+```{r df1}
+time <- 0:10
+date <- as.Date(time, origin = "2001-01-01")
+day <- weekdays(date, abbreviate = TRUE)
+
+df <- data.frame(time = time, date = date, day = day)
+#df <- data.frame(time, date, day) # same thing
+df
+
+mode(df) # stored as a list
+class(df) # but handled differently from a list
+```
+
+A nice feature of data frames is that they can
+be subsetted like lists *or like matrices*.
+
+```{r df2}
+## Retrieve the second element of the list element "date"
+df$date[2]
+
+## Retrieve the (2, "date")th element of the matrix (same thing)
+df[2, "date"]
+```
+
+To subset entire rows or columns, leave one side of
+the comma blank.
+
+```{r df3}
+## Retrieve the second and third rows
+df[c(2, 3), ]
+
+## Retrieve the second and third columns
+df[, c(2, 3)]
+```
+
+Appending a column to a data frame is like adding an 
+element to a list, except that, for data frames, 
+what we assign must be an atomic vector whose length
+divides the the number of rows in the data frame.
+
+```{r df4}
+## Vector with length equal to number of rows
+df$x <- exp(-(time - 5)^2)
+df
+
+## Vector with length 1 to be recycled
+df$y <- 1
+df
+```
+
+When altering an entry in a data frame, the value that you assign 
+*must match the mode of the column*. Recall that each column is an 
+atomic vector, and elements of atomic vectors have a common mode. 
+Below, we correctly assign a numeric value to the first element of 
+a numeric column.
+
+```{r df5}
+## Set the first element of numeric column "time" to numeric -1
+df$time[1] <- -1
+df
+```
+
+If you don't match the mode of the column, then elements of 
+the vector will all be coerced to a common mode, and R won't 
+let you know. This leads to unexpected behaviour!
+
+```{r df6}
+df_copy <- df
+
+## Set the first element of numeric column "time" to character "-1"
+df_copy$time[1] <- "-1"
+
+df_copy # *looks* the same as before
+
+mode(df_copy$time) # but ...
+class(df_copy$time) # numeric column "time" was coerced to character
+
+sum(df_copy$time) # can't add characters
+
+sum(df$time) # had we done things correctly
+```
+
+If you don't know the dimensions of your data frame, 
+use `nrow()` and `ncol()`, or just `dim()`, to find 
+out.
+
+```{r df7}
+nrow(df)
+ncol(df)
+dim(df)
+```
+
+For data frames, `length()` is the same as `ncol()`,
+because a data frame is effectively a list of columns, 
+and the length of the list is the number of columns.
+
+```{r df8}
+length(df)
+```
+
+Finally, it is often the case that our data frame
+has hundreds of rows, but we just want to inspect
+the first and last few rows to get a sense of what 
+the data frame looks like. Subsetting the first and
+last rows can be done with single square brackets,
+but also with `head()` and `tail()`.
+
+```{r df9}
+## First 6 rows
+head(df, n = 6)
+
+#df[1:6, ] # same thing
+
+## Last 2 rows
+tail(df, n = 2)
+
+#df[nrow(df)-(1:0), ] # same thing
+```
+
+The default value of argument `n` is 6, so actually
+`head(df, n = 6)` and `head(df)` are equivalent.
+
+## Dates
+
+R reserves a specific class for dates, namely the Date class.
+When Date vectors are printed in R, they are printed in the
+ISO 8601 standard of YYYY-MM-DD. When retrieving data from
+from a source outside of R, we very commonly end up with a
+character vector of dates in a format that isn't ISO 8601,
+and it is our job to create the Date vector we need. 
+
+Below are three character vectors specifying the same three
+dates in different formats.
+
+```{r date1}
+d1 <- c("1950-12-31", "1970-01-02", "2020-10-09") # ISO 8601
+class(d1)
+
+d2 <- c("12/31/1950", "01/02/1970", "10/09/2020") # common in some locales
+d3 <- c("31@1950?!12", "02@1970?!01", "09@2020?!10") # David Earn's preferred format
+```
+
+We convert each of these character vectors to Date vectors
+using `as.Date()`. We use argument `format` to specify the
+format of the dates we are providing, i.e., the order of 
+day, month, and year as well as their separation.
+
+```{r date2}
+dd1 <- as.Date(d1, format = "%Y-%m-%d") # YYYY-MM-DD
+class(dd1)
+
+dd2 <- as.Date(d2, format = "%m/%d/%Y") # MM/DD/YYYY
+dd3 <- as.Date(d3, format = "%d@%Y?!%m") # DD@YYYY?!MM
+
+dd1
+dd2 # identical
+dd3 # identical
+```
+
+This worked fine, because the dates given had a consistent
+numeric format, there was clear separation between day, 
+month, and year, and all four digits of the year were 
+provided. When this is not the case, conversion is not so straightforward. In this situation, run `?as.Date` to
+learn about additional options or try out the excellent 
+R package **lubridate**.
+
+The mode of a Date vector is actually numeric, because 
+R *stores* dates as a number of days since January 1, 1970.
+(Recall that an object's mode determines how it is stored,
+while its class determines how it is handled by functions.)
+
+```{r date3}
+mode(dd1)
+```
+
+Hence, coercing Date to numeric (changing the class of a
+vector from Date to numeric) with `as.numeric()` yields
+the following result:
+
+```{r date4}
+## Date
+dd1
+
+## Number of days since January 1, 1970
+as.numeric(dd1)
+```
+
+R allows one to compute the difference between
+two dates in days, though no other arithmetic
+operations are implemented. So, subtracting the
+Date scalar `as.Date("1970-01-01")` from Date 
+vector `dd1` actually reproduces `as.numeric(dd1)`.
+
+```{r date5}
+dd1 - as.Date("1970-01-01")
+```
+
+(Note that the default value of `as.Date()` argument 
+`format` is `"%Y-%m-%d"`, so we didn't need to specify 
+it.)
+
+Other functions that handle Date objects are `seq()` 
+and `diff()`. `seq()` can be used to obtain an 
+equally spaced Date vector, while `diff()` can be 
+used to get the difference in days between successive 
+elements of a Date vector.
+
+```{r date6}
+start <- as.Date("2001-01-01")
+end <- as.Date("2001-12-31")
+dseq <- seq(from = start, to = end, by = 30)
+dseq
+diff(dseq)
+```
