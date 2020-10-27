@@ -22,6 +22,8 @@ Math 747 _Topics in Mathematical Biology_ at [McMaster University](http://www.mc
 
 [NY Times Coronavirus Trackers](./NYTimes_covid_trackers.md)
 
+[Financial Times Coronavirus Tracker](https://ig.ft.com/coronavirus-chart)
+
 [RAEB Evidence Updates](./RAEB_evidence_updates/)
 
 [PHAC Daily COVID Scans](./PHAC_covid_scans/)
