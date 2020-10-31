@@ -32,6 +32,8 @@ Math 747 _Topics in Mathematical Biology_ at [McMaster University](http://www.mc
 
 [PHAC Daily COVID Scans](./PHAC_covid_scans/)
 
+[Visualizations](./visualizations.md)
+
 ### Covid in Canada
 
 [Canada COVID-19 Situational Awareness Dashboard](https://health-infobase.canada.ca/covid-19/dashboard/)
