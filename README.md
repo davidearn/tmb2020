@@ -34,6 +34,8 @@ Math 747 _Topics in Mathematical Biology_ at [McMaster University](http://www.mc
 
 [Visualizations](./visualizations.md)
 
+[Social distancing scoreboard (US)](https://www.unacast.com/covid19/social-distancing-scoreboard)
+
 ### Covid in Canada
 
 [Canada COVID-19 Situational Awareness Dashboard](https://health-infobase.canada.ca/covid-19/dashboard/)
