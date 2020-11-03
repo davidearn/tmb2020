@@ -54,6 +54,10 @@
 | [29](./2020-10-29.html)
 | [30](./2020-10-30.html)
 
+# November 2020
+
+- [02](./2020-11-02.html)
+
 ----
 
 All references from the daily scans (going back to the very beginning)
