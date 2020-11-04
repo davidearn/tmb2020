@@ -10,9 +10,8 @@ Math 747 _Topics in Mathematical Biology_ at [McMaster University](http://www.mc
 
 [Assignments](./assignments/)
 
-[Sources for Presentations](./handouts/tmbbib_2020.pdf)
-
 [Paper presentations](./paper_presentations.md)
+- [Sources for Presentations](./handouts/tmbbib_2020.pdf)
 
 [Software](./software.md)
 - [R examples](./Rexamples/Rexamples.R)
