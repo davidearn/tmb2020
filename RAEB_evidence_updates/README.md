@@ -40,6 +40,7 @@ COVID-19.
 #### November 2020
 
 - [Update #32 (2 Nov 2020)](./RAEB_32_2020-11-02.pdf)
+- [Update #33 (9 Nov 2020)](./RAEB_33_2020-11-09.pdf)
 
 ## RAEB Modelling Evidence Updates
 
