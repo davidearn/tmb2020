@@ -10,7 +10,7 @@
 | 5 | 22 Oct 2020 | Luka, Vladimir | [slides](./weekly_updates/2020-10-22_LukaVlad_COVID_19_Weekly_Update.pdf), [paper](./weekly_updates/YingOClery2020_COVIDinSupermarketsABM.pdf) |
 | 6 | 29 Oct 2020 | Aigerim, Elizabeth | [slides](./weekly_updates/2020-10-29_ElizabethAigerim_CovidUpdate.pdf)|
 | 7 |  5 Nov 2020 | Lee, Zachary | [slides](./weekly_updates/2020-11-05_LeeZach_WeeklyUpdate_FluCovidInteractions.pdf)|
-| 8 | 12 Nov 2020 | Luka, Vladimir | |
+| 8 | 12 Nov 2020 | Luka, Vladimir | [paper](./weekly_updates/Lan+20_OccupEnvMed_COVID_MentalHealthRetail.pdf)|
 | 9 | 19 Nov 2020 | Aigerim, Elizabeth | |
 |10 | 26 Nov 2020 | Lee, Zachary | |
 
