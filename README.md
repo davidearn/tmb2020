@@ -19,6 +19,8 @@ Math 747 _Topics in Mathematical Biology_ at [McMaster University](http://www.mc
 
 ## Covid
 
+[CMU CovidCast web site](https://covidcast.cmu.edu/)
+
 [NY Times Coronavirus Trackers](./NYTimes_covid_trackers.md)
 
 [Financial Times Coronavirus Tracker](https://ig.ft.com/coronavirus-chart)
