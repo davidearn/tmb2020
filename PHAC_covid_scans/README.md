@@ -68,6 +68,10 @@
 | [16](./2020-11-16.html)
 | [19](./2020-11-19.html)
 
+# December 2020
+
+- [01](./2020-12-01.html)
+
 ----
 
 All references from the daily scans (going back to the very beginning)
