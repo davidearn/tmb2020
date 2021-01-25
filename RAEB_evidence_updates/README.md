@@ -16,6 +16,10 @@ curated research and jurisdictional information that may be of
 interest to staff, and links to trusted sources of information about
 COVID-19.
 
+The sequence of evidence updates are available on the Ontario Ministry
+of Health web site:
+http://www.health.gov.on.ca/en/pro/ministry/research/evidence_synthesis.aspx
+
 ### August 2020
 
 - [Update #19 (04 Aug 2020)](./RAEB_19_2020-08-04.pdf)
