@@ -18,7 +18,7 @@ COVID-19.
 
 The sequence of evidence updates are available on the Ontario Ministry
 of Health web site:
-http://www.health.gov.on.ca/en/pro/ministry/research/evidence_synthesis.aspx
+<http://www.health.gov.on.ca/en/pro/ministry/research/evidence_synthesis.aspx>
 
 ### August 2020
 
